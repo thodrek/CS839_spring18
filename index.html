@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>CS839 - Data Management for Machine Learning Applications (Spring 2018)</title>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<div class="container">
+  <div class="navbar navbar-default" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">CS 839</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#description">Description</a></li>
+              <li><a href="#logistics">Class Logistics</a></li>
+              <li><a href="#lecture">Lecture Plan</a></li>
+              <li><a href="#grading">Grading</a></li>                          
+              <li class="divider"></li>
+              <li><a href="#late-policy">Late Policy</a></li>                      
+            </ul>
+          </li>
+          <li><a href="#office-hours">Office Hours</a></li>          
+          <li><a href="https://piazza.com/wisc/spring2018/cs839">Piazza</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<div class="jumbotron">
+<h1>CS839 Data Management for Machine Learning Applications</h1>
+<h3>COMP SCI 1257 on TuTh 2:30-3:45pm</h3>
+<p class="lead">Chat with us on <a href="https://piazza.com/wisc/spring2018/cs839">the course Piazza site</a> if you have any questions!</p>
+<p class="lead">Class repository: <a href="https://drive.google.com/drive/folders/1soJMN9FuuLOcC9diYtdSvfZZ9aZA4qBz?usp=sharing">CS839 Drive</a></p>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Description</div>
+  <div class="panel-body">
+    <a name="description"></a>
+<p>We are seeing widespread investments in machine learning (ML) that enable computers to interpret what they see, communicate in natural language, answer complex questions, and interact with their environment. There is a hidden catch, however: all state-of-the-art ML systems rely on high-effort data management tasks like data exploration, data preparation and data cleaning. The goal of this seminar course is to study data management challenges that arise in the context of machine learning pipelines. The focus will be on cutting-edge problems in the context of ML pipelines, related to (1) data exploration and understanding, (2) data integration, cleaning, and validation, and (3) data preparation for ML models and serving of production ML applications.
+
+The seminar will be very interactive and collaborative. The topics covered and the depth of coverage will depend on the participants' input and interests.
+
+The goal of the course is to give you an indepth look at an important, emerging topic in data management research. This course will provide research opportunities in the areas of data management, human-computer interaction, and machine learning. Along the way, you will also pick up some practical experience in reading and presenting research papers, synthesizing research across desperate areas, using existing tools, and doing a course project that ideally will lead to a publishable paper.
+</p>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Class Logistics</div>
+  <div class="panel-body">
+	  <a name="logistics"></a>
+    <p> <b>Class Format</b>
+    <ul>
+    <li><p>This is a seminar course. Each class will consist of presentations and discussion. Students will be required to do a class project for the course (60%). A significant portion of the grade will be based on class participation, which includes paper presentations, contributions to paper reviews, and paper discussions (40%). Because of the interactive nature of the course, and space limitations, auditing is discouraged.
+    </p></li>
+    </ul>
+    </p>
+	  <p> <b>Prerequisites</b>
+	  <ul>
+		<li><p>Mathematical maturity and a basic course in probability required.  Background in algorithms, databases, machine learning, and graphical models suggested.</p></li>
+	  </ul>
+	  </p>    
+<p><b>Assignments</b>
+    <ul>
+      <li>You will need to form <b> groups of up to three</b> people and work on certain assignments as described below.
+      <li>A research class project: Each group will work on a research project and file a single submission. The project will be broken down to five assignments: (1) initial research proposal, (2) Intermediate report, (3) final report, (4) final presentation (in class), and (5) poster presentation (people from the entire department will be invited).</li>
+      <li>Questions, Comments, and Responses (QCRs): During each class you will need to provide 3 questions and 3 comments for each (mandatory) paper. QCs will be <b>individual assignments</b>. For each class one of the groups (see above) will be responsible to lead a discussion on the papers and provide answers to all posted questions during class. Comments and answers will then be summarized in a written report which will be submitted and shared with everyone in the class. </li>            
+      <li>There will be <b> no midterm or final exams</b>.
+    </ul>
+</p>
+<p><b>Misc</b>
+    <ul>
+      <li>Class time may be adjusted to accomodate external talks releated to the class.</li>      
+      <li>Google drive for deliverables: <a href="https://drive.google.com/drive/folders/1soJMN9FuuLOcC9diYtdSvfZZ9aZA4qBz?usp=sharing">CS839 Drive</a></li>
+    </ul>
+</p>
+
+
+
+</div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h2 class="panel-title">Lecture Plan</h2>
+  </div>
+  <div class="panel-body">
+    <a name="lecture"></a>    
+    <p>
+    <hr /> 
+
+<table class="plan">
+  <tbody>
+    <tr>
+      <th>#</th>
+      <th>Date</th>
+      <th>Topic</th>
+      <th>Lecture Materials</th>
+      <th>Reading Material</th>
+      <th>Assignments</th>
+    </tr>
+    <tr>
+      <td align="center" colspan="6" class="small-section-header">Introduction and Class Overview</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1/23</td>
+      <td>Logistics and Data Management for Production ML</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders">
+        <ul>
+          <li>Kaggle: <a href="https://www.kaggle.com/surveys/2017">The state of data science</a></li>
+          <li>Polyzotis et al. <a href="papers/p1723-polyzotis.pdf">Data Management Challenges in Production Machine Learning</a>, SIGMOD 2017</li>
+        </ul>
+      </td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>1/25</td>
+      <td>DB amd ML integration: A systems percpective</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders">
+        <ul>
+          <li><a href="https://databricks.com/session/inside-apache-systemml">Inside SystemML</a></li>
+          <li>Kumar et al. <a href="papers/p1723-polyzotis.pdf">Data Management in Machine Learning</a>, SIGMOD 2017</li>
+          <li><a href="papers/EECS-2017-159.pdf">System Challenges for AI</a></li>
+        </ul>
+      </td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td align="center" colspan="6" class="small-section-header">Data Exploration and Understanding</td>
+    </tr>
+
+    <tr>
+      <td>3</td>
+      <td>1/30</td>
+      <td>What to expect from data: Data driven visualizations</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td>4</td>
+      <td>2/1</td>
+      <td>From data cubes to feature-based analysis</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td>2/6</td>
+      <td>Leave no relevant data behind: Data search</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>    
+
+    <tr>
+      <td>6</td>
+      <td>2/8</td>
+      <td>Data hubs: Version control for datasets</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td align="center" colspan="6" class="small-section-header">Data Preparation: Extraction, Integration, Cleaning</td>
+    </tr>
+
+    <tr>
+      <td>7</td>
+      <td>2/13</td>
+      <td>Knowledge Base Construction: From dark data to insights</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td>8</td>
+      <td>2/15</td>
+      <td>No Class</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td>9</td>
+      <td>2/20</td>
+      <td>Knowledge Base Construction: Multimodal data</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td>10</td>
+      <td>2/22</td>
+      <td>Data Integration: Entity Resolution 1</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td>11</td>
+      <td>2/27</td>
+      <td>Data Integration: Entity Resolution 2</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td>12</td>
+      <td>3/1</td>
+      <td>Data Integration: Data Fusion</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td>13</td>
+      <td>3/6</td>
+      <td>Data Wrangling</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td>14</td>
+      <td>3/8</td>
+      <td>Data Cleaning: Error Detection</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td>15</td>
+      <td>3/13</td>
+      <td>Data Cleaning: Error Repairing</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td>16</td>
+      <td>3/15</td>
+      <td>Data Cleaning and Machine Learning</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td>17</td>
+      <td>3/20</td>
+      <td>Management of Data under Uncertainty</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td>18</td>
+      <td>3/22</td>
+      <td>Summary of Data Preparation</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td align="center" colspan="6" class="small-section-header">RBMS and ML Integration</td>
+    </tr>    
+
+    <tr>
+      <td>19</td>
+      <td>4/3</td>
+      <td>Relational vs Linear Algebra: One semi-ring to rule them all!</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>    
+
+    <tr>
+      <td>20</td>
+      <td>4/5</td>
+      <td>ML and Data Systems: SQL and UDFs</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td>21</td>
+      <td>4/10</td>
+      <td>ML and Data Systems: Statistical Relational Learning Engines</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td>22</td>
+      <td>4/12</td>
+      <td>DB-inspired ML Systems: From Linear Algebra to Execulation Plans and Rewrites</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td>23</td>
+      <td>4/17</td>
+      <td>DB-inspired ML Systems: Compress, Scan, Index</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td>24</td>
+      <td>4/19</td>
+      <td>ML serving: Feature engineering</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td>25</td>
+      <td>4/24</td>
+      <td>ML serving: Model hubs; repositories for your models</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td>26</td>
+      <td>4/26</td>
+      <td>Project presentations 1</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td>27</td>
+      <td>5/1</td>
+      <td>Project presentations 2</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td>28</td>
+      <td>5/3</td>
+      <td>Poster presentations</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      </td>      
+      <td class="side-borders"></td> 
+      <td></td> 
+    </tr>
+
+  </tbody>
+</table>
+
+</p>
+</div>
+</div> 
+
+<div class="panel panel-default">
+  <div class="panel-heading">Grading</div>
+  <div class="panel-body">
+    <a name="grading"></a>
+    <table class="table">      
+      <tr><td>Questions and Comments</td><td>20%</td>
+      <tr><td>Responses and Discussion</td><td>20%</td>
+      <tr><td>Project Proposal</td><td>10%</td>
+      <tr><td>Project Intermediate Report</td><td>10%</td>
+      <tr><td>Project Final Report</td><td>30%</td>
+      <tr><td>Project Presentation and Poster</td><td>10%</td>
+    </table>    
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Office Hours</div>
+  <div class="panel-body">
+    <a name="office-hours"></a>
+    <p>Theo: by appointment @ Room CS4361</p>    
+</div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Late Policy and Deliverables</div>
+  <div class="panel-body">
+  <a name="late-policy"></a>
+There will be <b>no late dates for the project deliverables</b>. However, you have the option to <b>skip up to three QCs</b>. Additional extensions may be granted in the case of a severe medical or family emergency.
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">Credit</div>
+  <div class="panel-body">  
+The template of this website was created by HazyReseach@Stanford.
+  </div>
+</div>
+
+</div>
+</body>
+
+</html>
