@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>CS839 - Data Management for Machine Learning Applications (Spring 2018)</title>
+  <title>CS839 - Modern Data Management and Machine Learning Systems (Spring 2020)</title>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,30 +43,24 @@
               <li><a href="#late-policy">Late Policy</a></li>                      
             </ul>
           </li>
-          <li><a href="#office-hours">Office Hours</a></li>          
-          <li><a href="https://piazza.com/wisc/spring2018/cs839">Piazza</a></li>
+          <li><a href="#office-hours">Office Hours</a></li>           
         </ul>
       </div>
     </div>
   </div>
 
 <div class="jumbotron">
-<h1>CS839 Data Management for Machine Learning Applications</h1>
-<h3>COMP SCI 1257 on TuTh 2:30-3:45pm</h3>
-<p class="lead">Chat with us on <a href="https://piazza.com/wisc/spring2018/cs839">the course Piazza site</a> if you have any questions!</p>
-<p class="lead">Class repository: <a href="https://drive.google.com/drive/folders/1soJMN9FuuLOcC9diYtdSvfZZ9aZA4qBz?usp=sharing">CS839 Drive</a></p>
+<h1>CS839 Modern Data Management and Machine Learning Systems</h1>
+<h3>COMP SCI 1325 on TuTh 9:30AM - 10:45AM</h3>
+<p class="lead"> Class mailing list <a href="mailto:compsci839-1-s20@lists.wisc.edu">compsci839-1-s20@lists.wisc.edu</a>. We will be using it for announcements.</p>
 </div>
 
 <div class="panel panel-default">
   <div class="panel-heading">Description</div>
   <div class="panel-body">
     <a name="description"></a>
-<p>We are seeing widespread investments in machine learning (ML) that enable computers to interpret what they see, communicate in natural language, answer complex questions, and interact with their environment. There is a hidden catch, however: all state-of-the-art ML systems rely on high-effort data management tasks like data exploration, data preparation and data cleaning. The goal of this seminar course is to study data management challenges that arise in the context of machine learning pipelines. The focus will be on cutting-edge problems in the context of ML pipelines, related to (1) data exploration and understanding, (2) data integration, cleaning, and validation, and (3) data preparation for ML models and serving of production ML applications.
-
-The seminar will be very interactive and collaborative. The topics covered and the depth of coverage will depend on the participants' input and interests.
-
-The goal of the course is to give you an indepth look at an important, emerging topic in data management research. This course will provide research opportunities in the areas of data management, human-computer interaction, and machine learning. Along the way, you will also pick up some practical experience in reading and presenting research papers, synthesizing research across desperate areas, using existing tools, and doing a course project that ideally will lead to a publishable paper.
-</p>
+    <p> Modern Data Analytics and Machine learning (ML) are enjoying rapidly increasing adoption. However, designing and implementing the systems that support modern data analytics and machine learning in real-world deployments presents a significant challenge, in large part due to the radically different development and deployment profile of modern data analysis methods, and the range of practical concerns that come with broader adoption.</p>
+    <p> In this seminar course, we will describe the latest trends in modern data management and machine learning systems designs to better support the next generation of ML applications, and applications of ML to optimize the architecture and the performance of data management systems.</p>
   </div>
 </div>
 
@@ -76,27 +70,19 @@ The goal of the course is to give you an indepth look at an important, emerging 
 	  <a name="logistics"></a>
     <p> <b>Class Format</b>
     <ul>
-    <li><p>This is a seminar course. Each class will consist of presentations and discussion. Students will be required to do a class project for the course (60%). A significant portion of the grade will be based on class participation, which includes paper presentations, contributions to paper reviews, and paper discussions (40%). Because of the interactive nature of the course, and space limitations, auditing is discouraged.
-    </p></li>
+    <li><p>This is a seminar course. The format of this course will be a mix of lectures, seminar-style discussions, student presentations. Students will be responsible for paper readings, conference-style reviews, and completing a hands-on project. For projects, we will strongly encourage teams of <b>three people</b>.</p></li>
     </ul>
-    </p>
-	  <p> <b>Prerequisites</b>
-	  <ul>
-		<li><p>Mathematical maturity and a basic course in probability required.  Background in algorithms, databases, machine learning, and graphical models suggested.</p></li>
-	  </ul>
-	  </p>    
+    </p>	  
 <p><b>Assignments</b>
     <ul>
-      <li>You will need to form <b> groups of up to three</b> people and work on certain assignments as described below.
-      <li>A research class project: Each group will work on a research project and file a single submission. The project will be broken down to five assignments: (1) initial research proposal, (2) Intermediate report, (3) final report, (4) final presentation (in class), and (5) poster presentation (people from the entire department will be invited).</li>
-      <li>Questions, Comments, and Responses (QCRs): During each class you will need to provide 3 questions and 3 comments for each (mandatory) paper. QCs will be <b>individual assignments</b>. For each class one of the groups (see above) will be responsible to lead a discussion on the papers and provide answers to all posted questions during class. Comments and answers will then be summarized in a written report which will be submitted and shared with everyone in the class. </li>            
-      <li>There will be <b> no midterm or final exams</b>.
+      <li>Paper reviews/presentations (Individual assignments).
+      <li>Semester Project (Group assignment). We encourage students to find projects that relate to their ongoing research.</li>            
+      <li>There will be <b> no midterm or final exams</b>.</li>
     </ul>
 </p>
 <p><b>Misc</b>
     <ul>
-      <li>Class time may be adjusted to accomodate external talks releated to the class.</li>      
-      <li>Google drive for deliverables: <a href="https://drive.google.com/drive/folders/1soJMN9FuuLOcC9diYtdSvfZZ9aZA4qBz?usp=sharing">CS839 Drive</a></li>
+      <li>The lecture schedule may be updated to accomodate obligations of the instructor.</li>            
     </ul>
 </p>
 
@@ -117,7 +103,7 @@ The goal of the course is to give you an indepth look at an important, emerging 
 <table class="plan">
   <tbody>
     <tr>
-      <th>#</th>
+      <th>Week</th>
       <th>Date</th>
       <th>Topic</th>
       <th>Lecture Materials</th>
@@ -129,485 +115,525 @@ The goal of the course is to give you an indepth look at an important, emerging 
     </tr>
     <tr>
       <td>1</td>
-      <td>1/23</td>
-      <td>Logistics and Data Management for Production ML</td>
+      <td>1/21</td>
+      <td>Logistics and The Technical Aspects of Production ML</td>
       <td class="side-borders">
       <!-- Lecture -->
-      <a href=""><a href="lectures/Lecture_1_Intro.pptx">Lecture 1</a> 
+      <a href="">Lecture 1</a> 
       </td>      
       <td class="side-borders">
         <ul>
-          <li>Kaggle: <a href="https://www.kaggle.com/surveys/2017">The state of data science</a></li>
-          <li>Polyzotis et al. <a href="papers/p1723-polyzotis.pdf">Data Management Challenges in Production Machine Learning</a>, SIGMOD 2017</li>
+          <li>MLSys: <a href="https://arxiv.org/abs/1904.03257">MLSys Whitepaper</a></li>
+          <li><a href="https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf">A Few Useful Things to Know About Machine Learning</a></li>
+          <li>Polyzotis et al. <a href="https://research.google/pubs/pub46178/">Data Management Challenges in Production Machine Learning</a>, SIGMOD 2017</li>
         </ul>
       </td> 
+      <td></td> 
+    </tr>
+
+    <tr>
+      <td align="center" colspan="6" class="small-section-header">Machine Learning Life-Cycle</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>1/23</td>
+      <td>Machine Learning Life-Cycle: A systems' percpective</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      <a href="">Lecture 2</a> 
+      </td>      
+      <td class="side-borders"></td> 
       <td></td> 
     </tr>
 
     <tr>
       <td>2</td>
-      <td>1/25</td>
-      <td>DB and ML integration: A systems percpective</td>
+      <td>1/28</td>
+      <td>Machine Learning Life-Cycle: A systems' percpective</td>
       <td class="side-borders">
       <!-- Lecture -->
-      <a href=""><a href="lectures/Lecture_2_DML.pptx">Lecture 2</a> 
+      <a href="">Paper Review and Discussion</a> 
       </td>      
       <td class="side-borders">
         <ul>
-          <li><a href="https://databricks.com/session/inside-apache-systemml">Inside SystemML</a></li>
-          <li>Kumar et al. <a href="papers/p1717-kumar.pdf">Data Management in Machine Learning</a>, SIGMOD 2017</li>          
-          <li><a href="papers/EECS-2017-159.pdf">System Challenges for AI</a></li>
+          <li><a href="https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf">Hidden Technical Debt in Machine Learning Systems</a> (Paper to review)</li>
+          <li><a href="http://sites.computer.org/debull/A18dec/issue1.htm">Data Engineering Bulletin: Machine Learning Life-cycle Management</a></li>
+          <li><a href="http://sites.computer.org/debull/A18dec/p39.pdf">Accelerating the Machine Learning Lifecycle with MLflow</a></li>
+          <li><a href="https://research.google/pubs/pub46484/">TFX: A TensorFlow-Based Production-Scale Machine Learning Platform</a></li>
+          <li><a href="https://www-cs.stanford.edu/~matei/papers/2016/hilda_modeldb.pdf">MODELDB: A System for Machine Learning Model Management</a></li>          
         </ul>
       </td> 
+      <td>         
+        <ul>
+          <li>Submit your reviews <a href="">here</a>.</li>          
+        </ul>      
+      </td> 
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>1/30</td>
+      <td><b>No Class</b></td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      <b>No Lecture</b>
+      </td>      
+      <td class="side-borders"></td> 
       <td></td> 
     </tr>
 
     <tr>
-      <td align="center" colspan="6" class="small-section-header">Data Exploration and Understanding</td>
+      <td align="center" colspan="6" class="small-section-header">Training Data Collection</td>
     </tr>
 
     <tr>
       <td>3</td>
-      <td>1/30</td>
-      <td>What to expect from data: Data driven visualizations</td>
+      <td>2/4</td>
+      <td>Weak-Supervision: Automating The Collection of Training Data</td>
       <td class="side-borders">
       <!-- Lecture -->
-      <a href=""><a href="lectures/Lecture_3_Vis.pptx">Lecture 3</a>      
+      <a href="">Lecture 3</a>      
+      </td>      
+      <td class="side-borders"></td> 
+      <td>        
+      </td> 
+    </tr>
+
+    <tr>
+      <td>3</td>
+      <td>2/6</td>
+      <td>Weak-Supervision: Automating The Collection of Training Data</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      <a href="">Paper Review and Discussion</a> 
       </td>      
       <td class="side-borders">
         <ul>
-          <li>Vartak et al. <a href="http://www.vldb.org/pvldb/vol8/p2182-vartak.pdf">SeeDB</a>, VLDB 2015</li>
-          <li><a href="https://medium.com/@adityagp/enabling-data-science-for-the-majority-6255fabe230a">Enabling Data Science for the Majority</a> (Read but <b>no QCRs</b>)</li>
-          <li>Siddiqui et al. <a href ="http://www.vldb.org/pvldb/vol10/p457-siddiqui.pdf">ZenVisage</a>, VLDB 2017 <b>(Optional)</b></li>          
-          <li>Gonzalez et al. <a href ="papers/p1061-gonzalez.pdf">Google Fusion Tables</a>, SIGMOD 2010 <b>(Optional)</b></li>
+          <li><a href="https://arxiv.org/abs/1810.02840">Training Complex Models with Multi-Task Weak Supervision
+</a> (to review)</li>
+          <li><a href="https://arxiv.org/abs/1902.09229">A Theoretical Analysis of Contrastive Unsupervised Representation Learning</a></li>
+          <li><a href="https://arxiv.org/abs/1909.07930">Ludwig: a type-based declarative deep learning toolbox
+
+</a></li>
+          <li><a href="https://arxiv.org/pdf/1811.03402">A Survey on Data Collection for Machine Learning: A Big Data - AI Integration Perspective</a></li>
+          <li><a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Cubuk_AutoAugment_Learning_Augmentation_Strategies_From_Data_CVPR_2019_paper.pdf">AutoAugment: Learning Augmentation Strategies From Data</a></li>          
         </ul>
       </td> 
+      <td><li>Submit your reviews <a href="">here</a>.</li></td> 
+    </tr>
+
+    <tr>
+      <td align="center" colspan="6" class="small-section-header">Data Validation</td>
+    </tr>
+
+    <tr>
+      <td>4</td>
+      <td>2/11</td>
+      <td>Managing Noisy Data</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      <a href="">Lecture 4</a>      
+      </td>      
+      <td class="side-borders"></td> 
       <td>        
       </td> 
     </tr>
 
     <tr>
       <td>4</td>
-      <td>2/1</td>
-      <td>From data cubes to feature-based analysis</td>
+      <td>2/13</td>
+      <td>Managing Noisy Data</td>
       <td class="side-borders">
       <!-- Lecture -->
-      <a href=""><a href="lectures/Lecture_4_DD.pptx">Lecture 4</a>      
+      <a href="">Paper Review and Discussion</a> 
       </td>      
       <td class="side-borders">
         <ul>
-          <li>Jogklekar et al. <a href="https://arxiv.org/pdf/1412.0364.pdf">Interactive Data Exploration with Smart Drill-Down</a>, ICDE 2016</li>
-          <li>Sathe and Sarawagi <a href="https://www.cse.iitb.ac.in/~sunita/papers/vldb01.pdf">Intelligent Rollups in Multidimensional OLAP Data</a>, VLDB 2001 <b>(Optional)</b></li>
-          <li>Harinarayan et al. <a href ="papers/p205-harinarayan.pdf">Implementing Data Cubes Efficiently</a>, SIGMOD 1996 <b>(Optional)</b></li>
-          <li>Kahng et al. <a href ="https://www.cc.gatech.edu/~dchau/papers/16-sigmod-mlcube.pdf">Visual Exploration of Machine Learning Results using Data Cube Analysis</a>, HILDA Workshop @ SIGMOD 2016 <b>(Optional)</b></li>
+          <li><a href="https://arxiv.org/abs/1801.06750">A Formal Framework For Probabilistic Unclean Databases</a>(to review)</li>
+          <li><a href="https://arxiv.org/pdf/1811.00741.pdf">Stronger Data Poisoning Attacks Break Data Sanitization Defenses</a></li>
+          <li><a href="http://proceedings.mlr.press/v37/globerson15.html">How Hard is Inference for Structured Prediction?</a></li>
+          <li><a href="http://proceedings.mlr.press/v97/diakonikolas19a/diakonikolas19a.pdf">Sever: A Robust Meta-Algorithm for Stochastic Optimization</a></li>
+          <li><a href="https://openreview.net/forum?id=rJx1Na4Fwr">MACER: Attack-free and Scalable Robust Training via Maximizing Certified Radius</a></li>          
         </ul>
       </td> 
-      <td></td> 
+      <td><li>Submit your reviews <a href="">here</a>.</li></td> 
+    </tr>
+
+    <tr>
+      <td align="center" colspan="6" class="small-section-header">Addaptive Data Management</td>
     </tr>
 
     <tr>
       <td>5</td>
-      <td>2/6</td>
-      <td>Leave no relevant data behind: Data search</td>
+      <td>2/18</td>
+      <td>Learnable Data Structures</td>
       <td class="side-borders">
       <!-- Lecture -->
-      <a href=""><a href="lectures/Lecture_5_DS.pptx">Lecture 5</a>  
+      <a href="">Lecture 5</a>      
+      </td>      
+      <td class="side-borders"></td> 
+      <td>        
+      </td> 
+    </tr>
+
+    <tr>
+      <td>5</td>
+      <td>2/20</td>
+      <td>Learnable Data Structures</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      <a href="">Paper Review and Discussion</a> 
       </td>      
       <td class="side-borders">
         <ul>
-          <li>Halevy et al. <a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45390.pdf">Goods: Organizing Google's Datasets</a>, SIGMOD 2016</li>
-          <li>Hellerstein et al. <a href="http://cidrdb.org/cidr2017/papers/p111-hellerstein-cidr17.pdf">Ground: A Data Context Service</a>, CIDR 2017 <b>(Optional)</b></li>
-          <li>Rekatsinas et al. <a href="http://web2.research.att.com/export/sites/att_labs/techdocs/TD_101504.pdf">Finding Quality in Quantity</a>, CIDR 2015 <b>(Optional)</b></li>
+          <li><a href="https://www.cl.cam.ac.uk/~ey204/teaching/ACS/R244_2018_2019/papers/Kraska_SIGMOD_2018.pdf">The Case for Learned Index Structures</a> (to review)</li>
+          <li><a href="https://stratos.seas.harvard.edu/files/stratos/files/learningdatastructurealchemy.pdf">Learning Data Structure Alchemy</a></li>
+          <li><a href="https://arxiv.org/pdf/1912.01668">Learning Multi-Dimensional Indexes</a></li>
+          <li><a href="https://stratos.seas.harvard.edu/files/stratos/files/periodictabledatastructures.pdf">The Periodic Table of Data Structures</a></li>
+          <li><a href="https://arxiv.org/abs/1809.00677">Learned Cardinalities: Estimating Correlated Joins with Deep Learning</a></li>          
         </ul>
       </td> 
-      <td></td> 
-    </tr>    
+      <td><li>Submit your reviews <a href="">here</a>.</li></td> 
+    </tr>
+
+    <tr>
+      <td align="center" colspan="6" class="small-section-header">Project Proposal Review</td>
+    </tr>
 
     <tr>
       <td>6</td>
-      <td>2/8</td>
-      <td>Data hubs: Version control for datasets</td>
+      <td>2/25</td>
+      <td><b>No Class</b></td>
       <td class="side-borders">
       <!-- Lecture -->
-      <a href=""><a href="lectures/Lecture_6_DV.pptx">Lecture 6</a>      
+      <a href="">Proposal Submission Deadline (by end-of-day).</a>      
+      </td>      
+      <td class="side-borders">        
+      </td>
+      <td>         
+          <li>Instructions for submitting your Project Proposal can be found <a href="">here</a>.</li>
+      </td> 
+    </tr>
+
+    <tr>
+      <td>6</td>
+      <td>2/27</td>
+      <td><b>Meetings with Instructor to Review Project Proposals</b></td>
+      <td class="side-borders">
+      <!-- Lecture -->      
       </td>      
       <td class="side-borders">
         <ul>
-        <li>Bhattacherjee et al. <a href="http://www.vldb.org/pvldb/vol8/p1346-bhattacherjee.pdf">Principles of Dataset Versioning</a>, VLDB 2015</li>
-        <li>Miao et al. <a href="https://arxiv.org/pdf/1610.04963.pdf">ProvDB: A System for Lifecycle Management of Collaborative Analysis Workflows</a>, HILDA Workshop@SIGMOD 2017 <b>(Optional)</b></li>
+          <li>Sign-up sheet (15-minute slots):</li>          
         </ul>
       </td> 
       <td></td> 
     </tr>
 
     <tr>
-      <td align="center" colspan="6" class="small-section-header">Data Preparation: Extraction, Integration, Cleaning</td>
+      <td align="center" colspan="6" class="small-section-header">Project Proposal Review</td>
     </tr>
 
     <tr>
       <td>7</td>
-      <td>2/13</td>
-      <td>Knowledge Base Construction: From dark data to insights</td>
+      <td>3/3</td>
+      <td><b>No Class (MLSys 2020)</b></td>
       <td class="side-borders">
-      <!-- Lecture -->
-      <a href=""><a href="lectures/Lecture_7_KBC.pptx">Lecture 7</a>
+      <!-- Lecture -->          
+      <b> No Lecture </b>
+      </td>      
+      <td class="side-borders"></td> 
+      <td>        
+      </td> 
+    </tr>
+
+    <tr>
+      <td>7</td>
+      <td>3/5</td>
+      <td><b>Meetings with Instructor to Review Project Proposals</b></td>
+      <td class="side-borders">
+      <!-- Lecture -->      
       </td>      
       <td class="side-borders">
         <ul>
-        <li>Shin et al. <a href="http://www.vldb.org/pvldb/vol8/p1310-shin.pdf">Incremental Knowledge Base Construction Using DeepDive</a>, VLDB 2015</li>
-        <li>Dong et al. <a href="https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/45634.pdf">Knowledge Vault: A Web-Scale Approach to Probabilistic Knowledge Fusion</a>, KDD 2014 <b>(Optional)</b></li>
-        <li>Carlson et al. <a href="http://www.cs.cmu.edu/~acarlson/papers/carlson-aaai10.pdf">Toward an Architecture for Never-Ending Language Learning
-</a>, AAAI 2010 <b>(Optional)</b></li>
+          <li>Sign-up sheet (15-minute slots):</li>          
         </ul>
       </td> 
       <td></td> 
+    </tr>
+
+    <tr>
+      <td align="center" colspan="6" class="small-section-header">Serving Feature Selection Workloads</td>
     </tr>
 
     <tr>
       <td>8</td>
-      <td>2/15</td>
-      <td>No Class (Theo @ SysML)</td>
+      <td>3/10</td>
+      <td>Optimizations for Feature Selection Workloads</td>
       <td class="side-borders">
       <!-- Lecture -->
+      <a href="">Lecture 6</a>      
       </td>      
       <td class="side-borders"></td> 
-      <td></td> 
+      <td>        
+      </td> 
     </tr>
 
     <tr>
-      <td>9</td>
-      <td>2/20</td>
-      <td>Creating Training Data</td>
+      <td>8</td>
+      <td>3/12</td>
+      <td>Optimizations for Feature Selection Workloads</td>
       <td class="side-borders">
       <!-- Lecture -->
-      <a href=""><a href="lectures/Lecture_8_WS.pptx">Lecture 8</a>
+      <a href="">Paper Review and Discussion</a> 
       </td>      
       <td class="side-borders">
         <ul>
-        <li>Ratner et al. <a href="http://www.vldb.org/pvldb/vol11/p269-ratner.pdf">Snorkel: Rapid Training Data Creation with Weak Supervision</a>, VLDB 2018</li>
-        <li><a href="https://dawn.cs.stanford.edu/2017/07/16/weak-supervision/">Weak Superivsion blog</a> (Read but <b>no QCRs</b>)</li>
-        <li>Ratner et al. <a href="https://dawn.cs.stanford.edu/pubs/snorkel-nips2016.pdf">Data Programming: Creating Large Training Sets, Quickly</a>, NIPS 2016 <b>(Optional)</b></li>
-        <li>Carlson et al. <a href="http://www.cs.cmu.edu/~acarlson/papers/carlson-aaai10.pdf">Toward an Architecture for Never-Ending Language Learning
-</a>, AAAI 2010 <b>(Optional)</b></li>        
+          <li>Paper 1 (to review)</li>
+          <li>Paper 2</li>
+          <li>Paper 3</li>
+          <li>Paper 4</li>
+          <li>Paper 5</li>          
         </ul>
       </td> 
-      <td>Example class projects posted <a href="https://docs.google.com/document/d/1ORQnnjpMzjxBkJblsNoPXZM9xxNF6o4ZSIz5c-v6WsA/edit">here</a>!</td> 
+      <td><li>Submit your reviews <a href="">here</a>.</li></td> 
+    </tr>
+
+    <tr>
+      <td align="center" colspan="6"><font color=red><b>Spring Break</b></font></td>
+    </tr>
+
+    <tr>
+      <td align="center" colspan="6" class="small-section-header">Automated Machine Learning (AutoML)</td>
     </tr>
 
     <tr>
       <td>10</td>
-      <td>2/22</td>
-      <td>Data Integration: Entity Resolution 1</td>
+      <td>3/24</td>
+      <td>Efficient and Robust Automated Machine Learning</td>
       <td class="side-borders">
-      <!-- Lecture -->       
-      <a href=""><a href="lectures/Lecture_9_ER1.pptx">Lecture 9</a>
+      <!-- Lecture -->
+      <a href="">Lecture 7</a>      
+      </td>      
+      <td class="side-borders"></td> 
+      <td>        
+      </td> 
+    </tr>
+
+    <tr>
+      <td>10</td>
+      <td>3/26</td>
+      <td>Efficient and Robust Automated Machine Learning</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      <a href="">Paper Review and Discussion</a> 
       </td>      
       <td class="side-borders">
         <ul>
-          <li> Fellegi and Sunter <a href="papers/Fellegi69.pdf">A Theory for Record Linkage</a>, Journal of the American Statistical Association 1969</li>
-          <li> Getoor and Machanavajjhala <a href="https://www.umiacs.umd.edu/~getoor/Tutorials/ER_VLDB2012.pdf">Entity Resolution: Tutorial</a>, VLDB 2012 <b>no QCRs</b></li>
-          <li> Cohen et al. <a href="http://www.cs.cmu.edu/~wcohen/postscript/kdd-2003-match-ws.pdf">A Comparison of String Metrics for Matching Names and Records</a>, IJCAI 2003 <b>(Optional)</b></li>
-          <li> Singla and Domingos <a href="https://homes.cs.washington.edu/~pedrod/papers/icdm06.pdf">Entity Resolution with Markov Logic</a>, ICDM 2006 <b>(Optional)</b></li>
+          <li>Paper 1 (to review)</li>
+          <li>Paper 2</li>
+          <li>Paper 3</li>
+          <li>Paper 4</li>
+          <li>Paper 5</li>          
         </ul>
       </td> 
-      <td></td> 
+      <td><li>Submit your reviews <a href="">here</a>.</li></td> 
+    </tr>
+
+    <tr>
+      <td align="center" colspan="6" class="small-section-header">Distributed Model Training</td>
     </tr>
 
     <tr>
       <td>11</td>
-      <td>2/27</td>
-      <td>Data Integration: Entity Resolution 2</td>
+      <td>3/31</td>
+      <td>Distributed Model Training</td>
       <td class="side-borders">
       <!-- Lecture -->
-        <a href=""><a href="lectures/magellan_talk_theo_class.pdf">Lecture 10</a>
+      <a href="">Lecture 8</a>      
+      </td>      
+      <td class="side-borders"></td> 
+      <td>        
+      </td> 
+    </tr>
+
+    <tr>
+      <td>11</td>
+      <td>4/2</td>
+      <td>Distributed Model Training</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      <a href="">Paper Review and Discussion</a> 
       </td>      
       <td class="side-borders">
         <ul>
-        <li> Wang et al. <a href="http://www.vldb.org/pvldb/vol4/p622-wang.pdf">Entity Matching: How Similar is Similar</a>, VLDB 2011</li>
-        <li> Konda et al. <a href="http://www.vldb.org/pvldb/vol9/p1197-pkonda.pdf">Magellan: Toward Building Entity Matching Management Systems</a>, VLDB 2016 <b>(Optional)</b></li>
-        <li> Das et al. <a href="http://pages.cs.wisc.edu/~anhai/papers/falcon-tr.pdf">Falcon: Scaling Up Hands-Off Crowdsourced Entity Mathing to Build Cloud Services</a>, SIGMOD 2017 <b>(Optional)</b></li>        
+          <li>Paper 1 (to review)</li>
+          <li>Paper 2</li>
+          <li>Paper 3</li>
+          <li>Paper 4</li>
+          <li>Paper 5</li>          
         </ul>
       </td> 
-      <td><b>Project proposal due!</b></td> 
+      <td><li>Submit your reviews <a href="">here</a>.</li></td> 
+    </tr>
+
+    <tr>
+      <td align="center" colspan="6" class="small-section-header">Efficient Prediction Serving</td>
     </tr>
 
     <tr>
       <td>12</td>
-      <td>3/1</td>
-      <td>Data Integration: Data Fusion</td>
+      <td>4/7</td>
+      <td>Model Cascades</td>
       <td class="side-borders">
-      <!-- Lecture -->      
-       <a href=""><a href="lectures/Lecture_11_DF.pdf">Lecture 11</a>
+      <!-- Lecture -->
+      <a href="">Lecture 9</a>      
+      </td>      
+      <td class="side-borders"></td> 
+      <td>        
+      </td> 
+    </tr>
+
+    <tr>
+      <td>12</td>
+      <td>4/9</td>
+      <td>Model Cascades</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      <a href="">Paper Review and Discussion</a> 
       </td>      
       <td class="side-borders">
         <ul>
-        <li> Rekatsinas et al. <a href="papers/p1399-rekatsinas.pdf">SLiMFast: Guaranteed Results for Data Fusion and Source Reliability</a>, SIGMOD 2017</li>
-        <li> Li et al. <a href="http://lunadong.com/publication/webfusion_vldb.pdf">Truth Finding on the Deep Web: Is the Problem Solved?</a>, VLDB 2013 <b>(Optional)</b></li>
-        <li> Dong et al. <a href="http://lunadong.com/publication/dependence_vldb.pdf">Integrating conflicting data: the role of source dependence</a>, VLDB 2009 <b>(Optional)</b></li>        
+          <li>Paper 1 (to review)</li>
+          <li>Paper 2</li>
+          <li>Paper 3</li>
+          <li>Paper 4</li>
+          <li>Paper 5</li>          
         </ul>
       </td> 
-      <td></td> 
+      <td><li>Submit your reviews <a href="">here</a>.</li></td> 
+    </tr>
+
+    <tr>
+      <td align="center" colspan="6" class="small-section-header">Model Compression</td>
     </tr>
 
     <tr>
       <td>13</td>
-      <td>3/6</td>
-      <td>Data Wrangling</td>
+      <td>4/14</td>
+      <td>Low-Precision and Low-Rank Learning</td>
       <td class="side-borders">
       <!-- Lecture -->
-      <a href=""><a href="lectures/Lecture_12_DW.pptx">Lecture 12</a>
+      <a href="">Lecture 10</a>      
+      </td>      
+      <td class="side-borders"></td> 
+      <td>        
+      </td> 
+    </tr>
+
+    <tr>
+      <td>13</td>
+      <td>4/16</td>
+      <td>Low-Precision and Low-Rank Learning</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      <a href="">Paper Review and Discussion</a> 
       </td>      
       <td class="side-borders">
         <ul>
-        <li> Kandle et al. <a href="http://ilpubs.stanford.edu:8090/1005/1/wranglerPaper.pdf">Wrangler: Interactive Visual Specification of Data Transformation Scripts</a>, CHI 2011</li>
-        <li> Raza and Gulwani <a href="http://www.aaai.org/ocs/index.php/AAAI/AAAI17/paper/download/15034/13857">Automated Data Extraction Using Predictive Program Synthesis.</a>, AAAI 2017 <b>(Optional)</b></li>
-        <li> Jin et al. <a href="https://web.eecs.umich.edu/~mrander/pubs/foofah-full.pdf">Foofah: Transforming Data By Example</a>, SIGMOD 2017 <b>(Optional)</b></li>        
+          <li>Paper 1 (to review)</li>
+          <li>Paper 2</li>
+          <li>Paper 3</li>
+          <li>Paper 4</li>
+          <li>Paper 5</li>          
         </ul>
       </td> 
-      <td></td> 
+      <td><li>Submit your reviews <a href="">here</a>.</li></td> 
+    </tr>
+
+    <tr>
+      <td align="center" colspan="6" class="small-section-header">Relational Bias in Neural Networks</td>
     </tr>
 
     <tr>
       <td>14</td>
-      <td>3/8</td>
-      <td>Data Cleaning: Error Detection</td>
+      <td>4/21</td>
+      <td>Graph (Neural) Networks</td>
       <td class="side-borders">
       <!-- Lecture -->
-      <a href=""><a href="lectures/Lecture_13_ED.pptx">Lecture 13</a>
+      <a href="">Lecture 11</a>      
+      </td>      
+      <td class="side-borders"></td> 
+      <td>        
+      </td> 
+    </tr>
+
+    <tr>
+      <td>14</td>
+      <td>4/23</td>
+      <td>Graph (Neural) Networks</td>
+      <td class="side-borders">
+      <!-- Lecture -->
+      <a href="">Paper Review and Discussion</a> 
       </td>      
       <td class="side-borders">
         <ul>
-        <li> Abedjan et al. <a href="http://www.vldb.org/pvldb/vol9/p993-abedjan.pdf">Detecting Data Errors:
-Where are we and what needs to be done?</a>, VLDB 2016</li>
-        <li> Wu and Madden <a href="http://www.vldb.org/pvldb/vol6/p553-wu.pdf">Scorpion: Explaining away outliers in aggregate queries</a>, VLDB 2013 <b>(Optional)</b></li>
-        <li> Chu et al. <a href="https://cs.uwaterloo.ca/~ilyas/papers/XuICDE2013.pdf">Holistic data cleaning: Putting violations into context.</a>, ICDE 2013 <b>(Optional)</b></li>        
+          <li>Paper 1 (to review)</li>
+          <li>Paper 2</li>
+          <li>Paper 3</li>
+          <li>Paper 4</li>
+          <li>Paper 5</li>          
         </ul>
       </td> 
-      <td></td> 
+      <td><li>Submit your reviews <a href="">here</a>.</li></td> 
+    </tr>
+
+    <tr>
+      <td align="center" colspan="6" class="small-section-header">Project Presentations Week</td>
     </tr>
 
     <tr>
       <td>15</td>
-      <td>3/13</td>
-      <td>Data Cleaning: Error Repairing</td>
+      <td>4/28</td>
+      <td><b>Project Presentations Part 1</b></td>
       <td class="side-borders">
-      <!-- Lecture -->
-      <a href=""><a href="lectures/Lecture_14_DR.pptx">Lecture 14</a>
+      <!-- Lecture -->      
       </td>      
+      <td class="side-borders"></td> 
+      <td>        
+      </td> 
+    </tr>
+
+    <tr>
+      <td>15</td>
+      <td>4/30</td>
+      <td><b>Project Presentations Part 2</b></td>
       <td class="side-borders">
-        <ul>
-        <li> Rekatsinas et al. <a href="http://www.vldb.org/pvldb/vol10/p1190-rekatsinas.pdf">HoloClean: Holistic Data Repairs with Probabilistic Inference</a>, VLDB 2017</li>
-        <li> Hellesrstein <a href="http://db.cs.berkeley.edu/jmh/papers/cleaning-unece.pdf">Quantitative Data Cleaning for Large Databases</a>, 2008 <b>(Optional)</b></li>
-        <li> Fagin et al.<a href="papers/p3-fagin.pdf">Dichotomies in the Complexity of Preferred Repairs</a>, PODS 2015 <b>(Optional)</b></li>              
-        </ul>
+      <!-- Lecture -->      
+      </td>      
+      <td class="side-borders">        
       </td> 
       <td></td> 
+    </tr>
+
+    <tr>
+      <td align="center" colspan="6" class="small-section-header">Final Project Report</td>
     </tr>
 
     <tr>
       <td>16</td>
-      <td>3/15</td>
-      <td>Data Cleaning and Machine Learning</td>
+      <td>5/8</td>
+      <td><b>Final Project Report Due (by end-of-day)</b></td>
       <td class="side-borders">
-      <!-- Lecture -->
-      <a href=""><a href="lectures/Lecture_15_CML.pptx">Lecture 15</a>
-      </td>      
-      <td class="side-borders">
-        <ul>
-        <li> Krishnan et al. <a href="http://www.vldb.org/pvldb/vol9/p948-krishnan.pdf">http://www.vldb.org/pvldb/vol9/p948-krishnan.pdf</a>, 2016</li>
-        <li> Krishnan et al. <a href="https://arxiv.org/abs/1711.01299">BoostClean: Automated Error Detection and Repair for Machine Learning</a>, 2017<b>(Optional)</b></li>        
-        <li> Dolatshah et al.<a href="http://www.cs.sfu.ca/~jnwang/papers/TR-TARS.pdf">Cleaning Crowdsourced Labels Using Oracles For Supervised Learning</a>, 2018 <b>(Optional)</b></li>             
-        </ul>
-      </td>       
-      <td></td> 
-    </tr>
-
-    <tr>
-      <td>17</td>
-      <td>3/20</td>
-      <td>Management of Data under Uncertainty</td>
-      <td class="side-borders">
-      <!-- Lecture -->
-      <a href=""><a href="lectures/Lecture_16_PDB.pptx">Lecture 16</a>
-      </td>      
-      <td class="side-borders">
-        <ul>
-        <li> Dalvi et al. <a href="https://www-cs.stanford.edu/~chrismre/papers/cacm-paper-full.pdf">Probabilistic Databases: Diamonds in the Dirt</a>, 2009</li>
-        <li> Dalvi et al. <a href="http://www.vldb.org/conf/2004/RS22P1.PDF">Efficient Query Evaluation on Probabilistic Databases</a>, 2004<b>(Optional)</b></li>                
-        </ul>
-      </td> 
-      <td></td> 
-    </tr>
-
-    <tr>
-      <td>18</td>
-      <td>3/22</td>
-      <td>Summary of Data Preparation</td>
-      <td class="side-borders">
-      <!-- Lecture -->
-      <a href="lectures/Lecture_17_recap.pptx">Lecture 17</a>
-      </td>      
-      <td class="side-borders"> No Readings.</td> 
-      <td></td> 
-    </tr>
-
-    <tr>
-      <td align="center" colspan="6" class="small-section-header">RBMS and ML Integration</td>
-    </tr>    
-
-    <tr>
-      <td>19</td>
-      <td>4/3</td>
-      <td>Relational vs Linear Algebra: One semi-ring to rule them all!</td>
-      <td class="side-borders">
-      <!-- Lecture -->
-      <a href="lectures/Lecture_18_SR.pptx">Lecture 18</a>
-      </td>      
-      <td class="side-borders">
-        <ul>
-        <li> Joglekar et al. <a href="hhttps://arxiv.org/pdf/1508.07532.pdf">Aggregations over Generalized Hypertree Decompositions</a>, PODS 2016</li>
-        <li> Aberger et al. <a href="http://www.aberger.site/levelheaded.pdf">LevelHeaded: A Unified Engine for Business Intelligence and Linear Algebra Querying
-</a>, ICDE 2018</li>
-        <li> Jananthan et al. <a href="https://arxiv.org/pdf/1712.00802.pdf">Polystore Mathematics of Relational Algebra</a>, 2017<b>(Optional)</b></li>
-        <li> Hutchison et al. <a href="https://arxiv.org/pdf/1703.07342.pdf">LaraDB: A Minimalist Kernel for Linear and Relational Algebra Computation
-</a>, BeyondMR 2017<b>(Optional)</b></li>        
-        </ul>
-      </td> 
-      <td><b>Intermediate Report due!</b></td> 
-    </tr>    
-
-    <tr>
-      <td>20</td>
-      <td>4/5</td>
-      <td>ML and Data Systems: SQL and UDFs</td>
-      <td class="side-borders">
-      <!-- Lecture -->
-      <a href="lectures/Lecture_19_MAD.pptx">Lecture 19</a>      
-      </td>      
-      <td class="side-borders">
-        <ul>
-        <li> Luo et al. <a href="https://pdfs.semanticscholar.org/61e2/f35b4ef5d569aa3084e3118ea16df200965f.pdf">Scalable Linear Algebra on a Relational Database System</a>, 2017</li>
-        <li> Hellerstein et al. <a href="https://arxiv.org/pdf/1208.4165.pdf">The MADlib Analytics Library or MAD Skills, the SQL</a>, 2012</li>
-        </ul>        
-      </td> 
-      <td></td> 
-    </tr>
-
-    <tr>
-      <td>21</td>
-      <td>4/10</td>
-      <td>ML and Data Systems: Statistical Relational Learning Engines</td>
-      <td class="side-borders">
-      <!-- Lecture -->         
-      <a href="lectures/Lecture_20_MRF.pptx">Lecture 20</a>      
-      </td>      
-      <td class="side-borders">
-        <ul>
-         <li> Zhang and Re <a href="http://www.vldb.org/pvldb/vol7/p1283-zhang.pdf">DimmWitted: A Study of Main-Memory Statistical Analytics</a>, 2014</li>
-         <li> Niu et al. <a href="https://www.cs.stanford.edu/people/chrismre/papers/tuffy-vldb11.pdf">Tuffy: Scaling up Statistical Inference in Markov Logic Networks using an RDBMS</a><b> (Optional)</b>, 2011</li>
-         <li> Tran et al. <a href="https://arxiv.org/pdf/1610.09787.pdf">Edward: A library for probabilistic modeling, inference, and criticism</a><b> (Optional)</b>, 2017</li>
-         </ul>        
-      </td> 
-      <td></td> 
-    </tr>
-
-    <tr>
-      <td>22</td>
-      <td>4/12</td>
-      <td>DB-inspired ML Systems: From Linear Algebra to Execulation Plans and Rewrites</td>
-      <td class="side-borders">
-      <!-- Lecture -->
-      <a href="lectures/Lecture_21_OPT.pptx">Lecture 21</a>
-      </td>      
-      <td class="side-borders">
-      <ul><li> Boehm et al. <a href=" https://pdfs.semanticscholar.org/0a9d/a717999ba687bcbef86cbc996f4b7334f990.pdf">SystemML's Optimizer:
-Plan Generation for Large-Scale Machine Learning Programs</a>, 2014</li>       
-      </ul>        
-      </td> 
-      <td></td> 
-    </tr>
-
-    <tr>
-      <td>23</td>
-      <td>4/17</td>
-      <td>DB-inspired ML Systems: Compress, Scan, Index</td>
-      <td class="side-borders">
-      <!-- Lecture -->
-      <a href="lectures/Lecture_22_COMP.pptx">Lecture 22</a>
-      </td>      
-      <td class="side-borders">
-        <ul>
-         <li> Elgohary et al.<a href="https://researcher.watson.ibm.com/researcher/files/ibm-Matthias.Boehm1/SIGMODRec2017.pdf">Scaling Machine Learning via Compressed Linear Algebra</a>, 2017</li>
-         <li> Boehm et al. <a href="https://arxiv.org/pdf/1801.00829.pdf">On Optimizing Operator Fusion Plans
-for Large-Scale Machine Learning in SystemML</a><b> (Optional)</b>, 2011</li>         
-         </ul>        
-      </td> 
-      <td></td> 
-    </tr>
-
-    <tr>
-      <td>24</td>
-      <td>4/19</td>
-      <td>ML serving: Feature engineering</td>
-      <td class="side-borders">      
-      <a href="lectures/Lecture_23_FS.pptx">Lecture 23</a>
-      </td>      
-      <td class="side-borders">
-        <ul>
-        <li>Zhang et al. <a href="https://cs.stanford.edu/people/chrismre/papers/mod539-zhang.pdf">Materialization optimizations for feature selection workloads</a>, SIGMOD 2014</li>
-        <li>Nargesian et al. <a href="https://www.ijcai.org/proceedings/2017/0352.pdf">Learning Feature Engineering for Classification</a>, IJCAI 2017 <b>(Optional)</b></li>
-        </ul>
-      </td> 
-      <td></td> 
-    </tr>
-
-    <tr>
-      <td>25</td>
-      <td>4/24</td>
-      <td>ML serving: Model hubs; repositories for your models</td>
-      <td class="side-borders">
-      <!-- Lecture -->
-      <a href="lectures/Lecture_24_MH.pptx">Lecture 24</a>
-      </td>      
-      <td class="side-borders">
-        <ul>
-        <li>Miao et al. <a href="https://arxiv.org/abs/1611.06224">ModelHub: Towards Unified Data and Lifecycle Management for Deep Learning</a>, 2016</li>        
-      </td> 
-      <td></td> 
-    </tr>
-
-    <tr>
-      <td>26</td>
-      <td>4/26</td>
-      <td>Project presentations 1</td>
-      <td class="side-borders">
-      <!-- Lecture -->
+      <!-- Lecture -->      
       </td>      
       <td class="side-borders"></td> 
-      <td></td> 
+      <td>
+        <li>Instructions for submitting your Final Project Report can be found <a href="">here</a>.</li>        
+      </td> 
     </tr>
 
-    <tr>
-      <td>27</td>
-      <td>5/1</td>
-      <td>Project presentations 2</td>
-      <td class="side-borders">
-      <!-- Lecture -->
-      </td>      
-      <td class="side-borders"></td> 
-      <td></td> 
-    </tr>
-
-    <tr>
-      <td>28</td>
-      <td>5/3</td>
-      <td>Poster presentations</td>
-      <td class="side-borders">
-      <!-- Lecture -->
-      </td>      
-      <td class="side-borders"></td> 
-      <td></td> 
-    </tr>
+    
 
   </tbody>
 </table>
@@ -621,12 +647,9 @@ for Large-Scale Machine Learning in SystemML</a><b> (Optional)</b>, 2011</li>
   <div class="panel-body">
     <a name="grading"></a>
     <table class="table">      
-      <tr><td>Questions and Comments</td><td>20%</td>
-      <tr><td>Responses and Discussion</td><td>20%</td>
-      <tr><td>Project Proposal</td><td>10%</td>
-      <tr><td>Project Intermediate Report</td><td>10%</td>
-      <tr><td>Project Final Report</td><td>30%</td>
-      <tr><td>Project Presentation and Poster</td><td>10%</td>
+      <tr><td>Reviews and Presentations</td><td>20%</td>      
+      <tr><td>Project Presentation</td><td>20%</td>      
+      <tr><td>Project Final Report</td><td>60%</td>      
     </table>    
   </div>
 </div>
@@ -643,7 +666,7 @@ for Large-Scale Machine Learning in SystemML</a><b> (Optional)</b>, 2011</li>
   <div class="panel-heading">Late Policy and Deliverables</div>
   <div class="panel-body">
   <a name="late-policy"></a>
-There will be <b>no late dates for the project deliverables</b>. However, you have the option to <b>skip up to three QCs</b>. Additional extensions may be granted in the case of a severe medical or family emergency.
+There will be <b>no late dates for the project deliverables</b>. However, you have the option to <b>skip up to two reviews</b>. Additional extensions may be granted in the case of a severe medical or family emergency.
   </div>
 </div>
 
